@@ -1,0 +1,390 @@
+/*
+===============================================================================
+Start CSS Reset
+===============================================================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+===============================================================================
+End CSS Reset
+===============================================================================
+*/
+body,
+textarea {
+    font-family: 'Merriweather', 'Garamond', serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    background-color:#b08041;
+}
+
+textarea {
+    background-color: #ffffff;
+}
+
+b {
+    font-weight: 725;
+}
+
+header,
+footer {
+    overflow: hidden;
+    color: #ffffff;
+}
+
+header h1 {
+    float: left;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 20px 0 0 0;
+    font-size: 44px;
+    border-top: 4px solid #D7C0A1;
+}
+
+header h2 {
+    font-size: 24px;
+    padding: 40px 0 20px 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #D7C0A1;
+    text-decoration: non1f5ae;
+}
+
+nav a.active {
+    background-color: #D7C0A1;
+    color: #000000;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header,
+nav,
+article,
+footer {
+    padding: 0 15% 0 15%;
+}
+
+article {
+    background-color: #c9bba8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 22px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.75) inset;
+}
+
+article h1 {
+    width: fit-content;
+    font-size: 54px;
+    color: #c9852c;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #c9852c;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 1.25px solid #000000;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-top: 20px;
+}
+
+article p.dates {
+    float: right;
+}
+
+article h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+article h4 {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+article ul {
+    list-style: inside;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: antiquewhite;
+    padding: 10px;
+    min-height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h3 {
+    text-transform: none;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+footer {
+    font-size: 12px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 -5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer > h1 {
+    float: left;
+    text-transform: uppercase;
+}
+
+footer a {
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+footer a.active {
+    color: #cca471;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+input[type='email'],
+input[type='text'],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type='submit'] {
+    background-color: #B69870;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: #000000;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #eccba0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+    header h2 {
+        clear: left;
+        text-align: unset;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+
+    nav {
+        justify-content: unset;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
